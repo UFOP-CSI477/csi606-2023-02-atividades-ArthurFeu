@@ -1,12 +1,132 @@
 body{
-    background-color: #ccc;
+    background-color: rgb(231, 231, 231);
+    font-family: Arial, sans-serif;
 }
 .container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
 }
-.form_content > div > label{
+.image-container {
+    margin-right: 5%;
 
+}
+
+.image-container img {
+    width: 100%;
+}
+
+
+.form_content {
+    flex: 1; 
+}
+
+.input-group {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: medium;
+    color: #550c0c;
+}
+
+input[type="password"] {
+    font-family: Verdana;
+}
+
+input[type="date"]{
+    background-color: #550c0c;
+    font-family: "Roboto Mono",monospace;
+    color: #550c0c;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #c2c2c2;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type="text"], input[type="password"], input[type="date"] {
+    font-size: 1em;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.form_content > div > label{
+    display: inline-block;
+    width: 150px;
 }
 
 .checkbox_form_content_label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.checkbox_form_content_label label[for="gender"] {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #3d0a0a;
+    margin-bottom: 10px;
+}
 
+input[type="submit"] {
+    background-color: #af4c4c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #3f0606;
+}
+.checkbox_form_content_label input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #af4c4c;
+    cursor: pointer;
+    margin-right: 5px;
+    position: relative;
+    border-radius: 5px; 
+    background-color: #f0f0f0; 
+}
+.checkbox_form_content_label input[type="radio"]:hover {
+    background-color: #f38585;
+}
+.checkbox_form_content_label input[type="radio"]:checked {
+    background-color: #5a0d0d;
+}
+
+.checkbox_form_content_label input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.submit-button {
+    text-align: center;
 }
