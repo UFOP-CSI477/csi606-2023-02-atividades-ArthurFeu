@@ -10,46 +10,54 @@
 
 <body>
     <div class="container">
+        <div class="image-container">
+            <img src="https://www.anoticiaregional.com.br/fotos/194160920224747517_0_noticia.png" alt="Imagem de exemplo">
+        </div>
         <form method="post" class="form_content">
-            <div>
-                <label for="first_name">Primeiro Nome:</label>
-                <input type="text" id="first_name" name="first_name">
-            </div>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="input-group">
+                    <label for="first_name">Nome:</label>
+                    <input type="text" id="first_name" name="first_name">
+                </div>
 
-            <div>
-                <label for="last_name">Último nome:</label>
-                <input type="text" id="last_name" name="last_name">
-            </div>
+                <div class="input-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password">
+                </div>
 
-            <div>
-                <label for="password">Senha:</label>
-                <input type="password" id="password" name="password">
-            </div>
+                <div class="input-group">
+                    <label for="repeat_password">Repita a senha:</label>
+                    <input type="password" id="repeat_password" name="repeat_password">
+                </div>
 
-            <div>
-                <label for="repeat_password">Repita a senha:</label>
-                <input type="password" id="repeat_password" name="repeat_password">
-            </div>
+                <div class="input-group form_date">
+                    <label for="born_date">Data de nascimento:</label>
+                    <input type="date" id="born_date" name="born_date">
+                </div>
 
-            <div class="form_date">
-                <label for="born_date">Data de nascimento:</label>
-                <input type="date" id="born_date" name="born_date">
-            </div>
-
-            <div class="checkbox_form_content_label">
-                <label for="gender">Gênero:</label>
-                <label for="f_gender">Feminino:</label>
-                <input type="radio" id="f_gender" name="gender" value="Feminino">
-
-                <label for="m_gender">Masculino:</label>
-
-                <label for="o_gender">Outro:</label>
-                <input type="radio" id="o_gender" name="gender" value="Outro">
-
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-            </div>
+                <div class="input-group checkbox_form_content_label">
+                    <label for="gender">Gênero:</label>
+                    <div>
+                        <label for="f_gender">Feminino</label>
+                        <input type="radio" id="f_gender" name="gender" value="Feminino">
+                    </div>
+                    
+                    <div>
+                        <label for="m_gender">Masculino</label>
+                        <input type="radio" id="m_gender" name="gender" value="Masculino">
+                    </div>
+                   
+                    <div>
+                        <label for="o_gender">Outro</label>
+                        <input type="radio" id="o_gender" name="gender" value="Outro">
+                    </div>
+                    
+                </div>
+                <div class="submit-button">
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
         </form>
     </div>
 </body>
