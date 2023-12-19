@@ -1,0 +1,77 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model TiposSanguineos {
+  id        Int      @id @default(autoincrement())
+  tipo      String
+  fator     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Pessoas   Pessoas[]
+}
+
+model Estados {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  sigla     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Cidades   Cidades[]
+}
+
+model Cidades {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  estadoId  Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  estado    Estados  @relation(fields: [estadoId], references: [id])
+  Pessoas   Pessoas[]
+  LocaisColeta LocaisColeta[]
+}
+
+model Pessoas {
+  id          Int      @id @default(autoincrement())
+  nome        String
+  rua         String
+  numero      String
+  complemento String
+  rg          String
+  cidadeId    Int
+  tipoId      Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  cidade      Cidades  @relation(fields: [cidadeId], references: [id])
+  tipo        TiposSanguineos @relation(fields: [tipoId], references: [id])
+  Doacoes     Doacoes[]
+}
+
+model LocaisColeta {
+  id          Int      @id @default(autoincrement())
+  nome        String
+  rua         String
+  numero      String
+  complemento String
+  cidadeId    Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  cidade      Cidades  @relation(fields: [cidadeId], references: [id])
+  Doacoes     Doacoes[]
+}
+
+model Doacoes {
+  id        Int      @id @default(autoincrement())
+  pessoaId  Int
+  localId   Int
+  data      DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  pessoa    Pessoas  @relation(fields: [pessoaId], references: [id])
+  local     LocaisColeta @relation(fields: [localId], references: [id])
+}
