@@ -1,0 +1,24 @@
+{
+  "name": "atividade-pratica",
+  "version": "1.0.0",
+  "description": "Sistemas Web I",
+  "dependencies": {
+    "@prisma/client": "^5.7.1",
+    "express": "^4.18.2",
+    "jest": "^28.1.1",
+    "typescript": "^4.5.5",
+    "webpack": "^5.89.0"
+  },
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "prisma": "^5.7.1"
+  }
+}
