@@ -1,4 +1,5 @@
-POST http://localhost:5000/estados/
+
+POST http://localhost:5555/estados/
 Content-Type: application/json
 
 {
@@ -8,23 +9,236 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:5000/estados/
+GET http://localhost:5555/estados/
 
 ###
 
-PUT http://localhost:5000/estados
+PUT http://localhost:5555/estados
 Content-Type: application/json
 
 {
 
-"id": 5, "nome": "Mato Grosso do Sul", "sigla": "MS"
+"id": 10, "nome": "Amazonas", "sigla": "AM"
 }
 
 ###
 
-DELETE http://localhost:5000/estados
+DELETE http://localhost:5555/estados
 Content-Type: application/json
 
 {
-    "id": 6
+    "id": 9
+}
+
+
+###
+
+POST http://localhost:5555/cidades
+Content-Type: application/json
+
+{
+    "nome": "Rio de Janeiro", "estadoId": 1
+}
+
+###
+
+POST http://localhost:5555/cidades
+Content-Type: application/json
+
+{
+    "nome": "Igarapé", "estadoId": 2
+}
+
+
+###
+
+GET http://localhost:5555/cidades/
+
+###
+GET http://localhost:5555/cidades/2
+
+###
+PUT http://localhost:5555/cidades
+Content-Type: application/json
+
+{
+    "id": 3, "nome": "Contagem", "estadoId": 2
+}
+
+###
+DELETE http://localhost:5555/cidades
+Content-Type: application/json
+
+{
+    "id": 3
+}
+
+###
+
+POST http://localhost:5555/tiposSanguineos
+Content-Type: application/json
+
+{
+    "tipo": "O",
+    "fator": "Positivo"
+}
+
+###
+
+GET http://localhost:5555/tiposSanguineos/
+
+###
+
+GET http://localhost:5555/tiposSanguineos/1
+
+###
+
+PUT http://localhost:5555/tiposSanguineos
+Content-Type: application/json
+
+{
+    "id": 2,
+    "tipo": "A",
+    "fator": "Negativo"
+}
+
+###
+
+DELETE http://localhost:5555/tiposSanguineos
+Content-Type: application/json
+
+{
+    "id": 1
+}
+
+###
+
+POST http://localhost:5555/pessoas
+Content-Type: application/json
+
+{
+    "nome": "John Doe",
+    "rua": "Rua Z",
+    "numero": "456",
+    "complemento": "Apartamento 101",
+    "rg": "123456789",
+    "cidadeId": 1,
+    "tipoId": 2
+}
+
+###
+
+GET http://localhost:5555/pessoas/
+
+###
+
+GET http://localhost:5555/pessoas/1
+
+###
+
+PUT http://localhost:5555/pessoas
+Content-Type: application/json
+
+{
+    "id": 1,
+    "nome": "Jane Doe",
+    "rua": "Rua A",
+    "numero": "789",
+    "complemento": "Casa 12",
+    "rg": "987654321",
+    "cidadeId": 2,
+    "tipoId": 3
+}
+
+###
+
+DELETE http://localhost:5555/pessoas
+Content-Type: application/json
+
+{
+    "id": 3
+}
+
+###
+
+POST http://localhost:5555/locais
+Content-Type: application/json
+
+{
+    "nome": "Local A",
+    "rua": "Rua X",
+    "numero": "123",
+    "complemento": "Perto da praça",
+    "cidadeId": 1
+}
+
+###
+
+GET http://localhost:5555/locais/
+
+###
+
+GET http://localhost:5555/locais/2
+
+###
+
+PUT http://localhost:5555/locais
+Content-Type: application/json
+
+{
+    "id": 2,
+    "nome": "Local B",
+    "rua": "Rua Y",
+    "numero": "321",
+    "complemento": "Ao lado do mercado",
+    "cidadeId": 2
+}
+
+###
+
+DELETE http://localhost:5555/locais
+Content-Type: application/json
+
+{
+    "id": 3
+}
+
+###
+
+POST http://localhost:5555/doacoes
+Content-Type: application/json
+
+{
+    "pessoaId": 2,
+    "localId": 2,
+    "data": "2023-10-12T10:30:00.000Z"
+}
+
+###
+
+GET http://localhost:5555/doacoes/
+
+###
+
+GET http://localhost:5555/doacoes/1
+
+###
+
+PUT http://localhost:5555/doacoes
+Content-Type: application/json
+
+{
+    "id": 1,
+    "pessoaId": 2,
+    "localId": 2,
+    "data": "2023-11-12T11:30:00.000Z"
+}
+
+###
+
+DELETE http://localhost:5555/doacoes
+Content-Type: application/json
+
+{
+    "id": 1
 }

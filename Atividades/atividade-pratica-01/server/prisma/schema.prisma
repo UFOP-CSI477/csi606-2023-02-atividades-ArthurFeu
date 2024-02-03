@@ -8,36 +8,36 @@ datasource db {
 }
 
 model TiposSanguineos {
-  id        Int      @id @default(autoincrement())
+  id        Int       @id @default(autoincrement())
   tipo      String
   fator     String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
   Pessoas   Pessoas[]
 }
 
 model Estados {
-  id        Int      @id @default(autoincrement())
+  id        Int       @id @default(autoincrement())
   nome      String
   sigla     String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
   Cidades   Cidades[]
 }
 
 model Cidades {
-  id        Int      @id @default(autoincrement())
-  nome      String
-  estadoId  Int
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  estado    Estados  @relation(fields: [estadoId], references: [id])
-  Pessoas   Pessoas[]
+  id           Int            @id @default(autoincrement())
+  nome         String
+  estadoId     Int
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  estado       Estados        @relation(fields: [estadoId], references: [id])
   LocaisColeta LocaisColeta[]
+  Pessoas      Pessoas[]
 }
 
 model Pessoas {
-  id          Int      @id @default(autoincrement())
+  id          Int             @id @default(autoincrement())
   nome        String
   rua         String
   numero      String
@@ -45,33 +45,33 @@ model Pessoas {
   rg          String
   cidadeId    Int
   tipoId      Int
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-  cidade      Cidades  @relation(fields: [cidadeId], references: [id])
-  tipo        TiposSanguineos @relation(fields: [tipoId], references: [id])
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
   Doacoes     Doacoes[]
+  tipo        TiposSanguineos @relation(fields: [tipoId], references: [id])
+  cidade      Cidades         @relation(fields: [cidadeId], references: [id])
 }
 
 model LocaisColeta {
-  id          Int      @id @default(autoincrement())
+  id          Int       @id @default(autoincrement())
   nome        String
   rua         String
   numero      String
   complemento String
   cidadeId    Int
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-  cidade      Cidades  @relation(fields: [cidadeId], references: [id])
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
   Doacoes     Doacoes[]
+  cidade      Cidades   @relation(fields: [cidadeId], references: [id])
 }
 
 model Doacoes {
-  id        Int      @id @default(autoincrement())
+  id        Int          @id @default(autoincrement())
   pessoaId  Int
   localId   Int
   data      DateTime
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  pessoa    Pessoas  @relation(fields: [pessoaId], references: [id])
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
   local     LocaisColeta @relation(fields: [localId], references: [id])
+  pessoa    Pessoas      @relation(fields: [pessoaId], references: [id])
 }
