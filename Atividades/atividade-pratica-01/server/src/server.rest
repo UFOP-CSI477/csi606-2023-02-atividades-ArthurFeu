@@ -209,7 +209,7 @@ POST http://localhost:5555/doacoes
 Content-Type: application/json
 
 {
-    "pessoaId": 2,
+    "pessoaId": 7,
     "localId": 2,
     "data": "2023-10-12T10:30:00.000Z"
 }
