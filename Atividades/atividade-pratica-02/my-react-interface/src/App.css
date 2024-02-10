@@ -13,7 +13,7 @@
 
 /* Estilos para o menu */
 .top-nav {
-  background-color: #333;
+  background-color: #382525;
   padding: 10px 0;
 }
 
@@ -23,7 +23,7 @@
   padding: 0;
 }
 .selected {
-  background-color: #555;
+  background-color: #702b2b;
 }
 .top-nav ul li {
   display: inline;
@@ -45,7 +45,7 @@
 
 
 .App-header {
-  background-color: #282c34;
+  background-color: #694741;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

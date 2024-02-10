@@ -132,6 +132,7 @@ const PeopleComponent = () => {
 					</li>
 				))}
 			</ul>
+			<p>Para editar clique em um tipo e utilize o mesmo espaço para criação.</p>
 		</div>
 	);
 };
