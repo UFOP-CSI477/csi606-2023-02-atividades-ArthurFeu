@@ -8,9 +8,11 @@ import { pessoasRouter } from "./routes/pessoas.js";
 import { tiposRouter } from "./routes/tiposSanguineos.js";
 import { prisma } from "./database/client.js"
 
+import cors from "cors";
 const server = express();
 const PORT = 5555
 
+server.use(cors());
 server.use(express.json())
 
 server.get('/', (request, response) => {

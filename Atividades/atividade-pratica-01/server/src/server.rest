@@ -62,7 +62,7 @@ PUT http://localhost:5555/cidades
 Content-Type: application/json
 
 {
-    "id": 3, "nome": "Contagem", "estadoId": 2
+    "id": 7, "nome": "Serro", "estadoId": 2
 }
 
 ###
@@ -117,13 +117,13 @@ POST http://localhost:5555/pessoas
 Content-Type: application/json
 
 {
-    "nome": "John Doe",
+    "nome": "Arthurzito",
     "rua": "Rua Z",
     "numero": "456",
     "complemento": "Apartamento 101",
-    "rg": "123456789",
-    "cidadeId": 1,
-    "tipoId": 2
+    "rg": "4561237",
+    "cidadeId": 6,
+    "tipoId": 3
 }
 
 ###

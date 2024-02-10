@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* App.css */
+.App {
+  text-align: center;
+}
+
+/* Estilos para o menu */
+.top-nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.top-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.selected {
+  background-color: #555;
+}
+.top-nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.top-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.top-nav ul li a:hover {
+  border-color: #fff;
+}
+
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
