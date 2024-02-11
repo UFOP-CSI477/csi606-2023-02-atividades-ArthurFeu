@@ -94,7 +94,7 @@ Perfis de usuário, para alternar entre diferentes pessoas ou contas pessoais
 
 ### 4. Principais desafios e dificuldades
 
-#... CSS
+... CSS
 TAN TAN TAN
 
 A famosa piada do desenvolvedor que faz o back-end em minutos e gasta horas para centralizar uma div. Utilizei o chatGPT para me ajudar nesta tarefa.
