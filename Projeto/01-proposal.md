@@ -1,35 +1,54 @@
 # **CSI606-2021-02 - Remoto - Proposta de Trabalho Final**
 
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## *Aluna(o): Arthur Mendonça Feu*
 
 --------------
 
-<!-- Descrever um resumo sobre o trabalho. -->
+### 1. Objetivo:
+fornecer aos usuários uma ferramenta intuitiva para gerenciar lembretes e eventos através de uma interface amigável.
 
-### Resumo
+### 2.1. Calendário:
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+Exibição do mês atual com destaque na data atual.
+Possibilidade de navegação entre meses.
+Marcação visual de dias com lembretes.
 
-<!-- Apresentar o tema. -->
-### 1. Tema
+### 2.2. Lembretes:
 
-  O trabalho final tem como tema o desenvolvimento de ...
+Adição de lembretes com opção de data no texto.
+Exibição de lembretes ativos.
+Marcação de lembretes como concluídos.
+Alternância entre lembretes ativos e concluídos.
+Inserção automática de lembretes com data no calendário
 
-<!-- Descrever e limitar o escopo da aplicação. -->
-### 2. Escopo
+### 3. Interface de Usuário (UI):
 
-  Este projeto terá as seguintes funcionalidades...
+### 3.1 Página Inicial:
 
-<!-- Apresentar restrições de funcionalidades e de escopo. -->
-### 3. Restrições
+Visão geral do calendário do mês atual.
+Destaque na data atual.
+Ícones ou indicadores visuais para dias com lembretes.
 
-  Neste trabalho não serão considerados ...
+### 3.2 Página de Lembretes:
 
-<!-- Construir alguns protótipos para a aplicação, disponibilizá-los no Github e descrever o que foi considerado. //-->
-### 4. Protótipo
+Listagem de lembretes ativos.
+Possibilidade de marcar lembretes como concluídos.
+Alternância entre lembretes ativos e concluídos.
+Adição de novos lembretes.
 
-  Protótipos para as páginas (descrever quais páginas) foram elaborados, e podem ser encontrados em...
+### 3.3 Página de Calendário:
 
-### 5. Referências
+Visão mensal do calendário com destaque na data selecionada.
+Exibição de lembretes para a data selecionada.
 
-  Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT.
+### 4. Persistência de Dados:
+
+Para testes iniciais dados serão salvos apenas por execução do código.
+
+Futuramente: Utilização de um banco de dados para armazenar informações de usuários, lembretes, checklist e datas associadas.
+
+### 5. Considerações Finais:
+
+O sistema busca oferecer uma experiência integrada, permitindo aos usuários gerenciar eficientemente seus lembretes e eventos por meio de um calendário intuitivo e uma lista de tarefas/checklist associada.
+
+
