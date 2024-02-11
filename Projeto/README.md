@@ -88,6 +88,8 @@ Para visualizar os lembretes por perfil de usuário e data
 
 Não foi possível adicionar ícones ou indicadores visuais para dias com lembretes. Por me faltar familiaridade com bibliotecas de calendário não consegui implementar a funcionalidade.
 
+Optei por também não implementar uma tela inicial.
+
 ### 3. Outras funcionalidades implementadas
 
 Perfis de usuário, para alternar entre diferentes pessoas ou contas pessoais
