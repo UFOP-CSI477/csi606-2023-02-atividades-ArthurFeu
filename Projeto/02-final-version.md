@@ -1,29 +1,45 @@
-# **CSI606-2021-02 - Remoto - Trabalho Final - Resultados**
+# **CSI606-2023-02 - Remoto - Trabalho Final - Resultados**
 
-## *Aluna(o): Princesa Leia (Luke Skywalker)*
+## _Aluno: Arthur Mendonça Feu_
 
---------------
-
-<!-- Este documento tem como objetivo apresentar o projeto desenvolvido, considerando o que foi definido na proposta e o produto final. -->
+---
 
 ### Resumo
 
-  (Apresentar um breve resumo sobre o seu trabalho, indicando o contexto e as principais funcionalidades.)
+Este trabalho foi feito buscando satisfazer uma necessidade pessoal de um sistema para executar um calendário juntamente a um software de lembretes. Eu utilizo no meu dia-a-dia o aplicativo de Lembretes do iOS e o mesmo não é integrado ao meu calendário, o que é uma pena. À partir deste problema, desenvolvi um sistema capaz de realizar as duas tarefas.
 
 ### 1. Funcionalidades implementadas
-<!-- Descrever as funcionalidades que eram previstas e foram implementas. -->
-  
+
+# Sistema de perfis (usuários)
+
+Para separar lembretes em diferentes pessoas (ou a mesma pessoa, mas lembretes pessoais, acadêmicos e de trabalho por exemplo)
+
+# Lembretes
+
+Para inserir tarefas com datas e um perfil em questão
+
+# Calendário
+
+Para visualizar os lembretes por perfil de usuário e data
+
 ### 2. Funcionalidades previstas e não implementadas
-<!-- Descrever as funcionalidades que eram previstas e não foram implementas, apresentando uma breve justificativa do porquê elas não foram incluídas -->
+
+Não foi possível adicionar ícones ou indicadores visuais para dias com lembretes. Por me faltar familiaridade com bibliotecas de calendário não consegui implementar a funcionalidade.
 
 ### 3. Outras funcionalidades implementadas
-<!-- Descrever as funcionalidades implementas além daquelas que foram previstas, caso se aplique.  -->
+
+Perfis de usuário, para alternar entre diferentes pessoas ou contas pessoais
 
 ### 4. Principais desafios e dificuldades
-<!-- Descrever os principais desafios encontrados no desenvolvimento do trabalho, quais foram as dificuldades e como elas foram superadas e resolvidas. -->
+
+... CSS
+TAN TAN TAN
+
+A famosa piada do desenvolvedor que faz o bacn-end em minutos e gasta horas para centralizar uma div. Utilizei o chatGPT para me ajudar nesta tarefa.
 
 ### 5. Instruções para instalação e execução
-<!-- Descrever o que deve ser feito para instalar (ou baixar) a aplicação, o que precisa ser configurando (parâmetros, banco de dados e afins) e como executá-la. -->
 
-### 6. Referências
-<!-- Referências podem ser incluídas, caso necessário. Utilize o padrão ABNT. -->
+Após baixar todo o diretório 'Projeto', entre na pasta e execute o comando
+npm run dev
+
+O comando irá executar o banco de dados e o react.

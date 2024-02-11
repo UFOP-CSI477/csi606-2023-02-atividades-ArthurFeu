@@ -1,0 +1,227 @@
+/* utilizei o chat gpt para me ajudar a estilizar meu código e comentar as tags css */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #ffe1e1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+body {
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+/* Remove bullets from list */
+ul {
+  color: black;
+  list-style-type: none;
+  padding: 0;
+}
+
+li span {
+  margin-right: 15px;
+}
+
+nav {
+  position: fixed; /* Fixa o menu no topo da página */
+  top: 0; /* Zero pixels do topo */
+  width: 100%; /* Faz o menu se estender por toda a largura da página */
+  padding: 10px 0; /* Adiciona um pouco de espaço acima e abaixo dos links */
+  background-color: #ffe1e1; /* Define uma cor de fundo para o menu */
+  z-index: 1000; /* Garante que o menu fique acima de outros elementos da página */
+}
+
+/* Adiciona padding no topo do conteúdo para evitar que seja sobreposto pelo menu fixo */
+.content {
+  padding-top: 60px; /* Ajuste este valor conforme a altura do seu menu */
+}
+
+/* Menu item styling */
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 20px;
+  border: 2px solid transparent; /* Adiciona uma borda transparente */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Adiciona uma transição suave */
+}
+
+nav ul li:hover {
+  background-color: #c62626; /* Cor de fundo ao passar o mouse */
+  color: whitesmoke
+}
+
+nav ul li.active {
+  background-color: #9e0f0f; /* Cor de fundo quando selecionado */
+  color: white; /* Cor do texto quando selecionado */
+}
+
+nav ul li:focus {
+  outline: none; /* Remove o contorno ao clicar */
+}
+
+nav ul li:active {
+  transform: translateY(1px); /* Efeito de clique */
+}
+
+.custom-checkbox {
+  transform: scale(1.5); /* Aumenta o tamanho da checkbox em 50% */
+  margin-right: 10px; /* Adiciona espaço à direita da checkbox */
+}
+
+h2 {
+  color: black;
+}
+
+h3 {
+  color: black;
+}
+
+h4 {
+  color: black;
+}
+
+.form-group {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  margin-bottom: 15px; /* Adiciona espaço abaixo do grupo de formulário */
+}
+
+.form-group label,
+.form-group input,
+.form-group textarea,
+.form-group select,
+.form-group button {
+  margin-right: 10px; /* Adiciona espaço à direita de cada elemento */
+}
+
+/* Ajustar o tamanho da textarea para combinar com outros inputs */
+.form-group textarea {
+  height: 38px; /* Altura padrão para combinar com inputs */
+  resize: none; /* Opcional: impede o usuário de redimensionar a textarea */
+}
+
+/* Adiciona estilos para o contêiner do formulário */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  max-width: 500px; /* Define uma largura máxima para o formulário */
+  width: 100%; /* Faz o formulário expandir até a largura máxima */
+  margin: auto; /* Centraliza o formulário na direção horizontal */
+}
+
+/* Alinha os botões à esquerda abaixo dos campos de entrada */
+.form-buttons {
+  display: flex;
+  justify-content: flex-start; /* Alinha os botões à esquerda */
+  margin-top: 10px; /* Espaço acima dos botões */
+}
+
+/* Estilo para os itens da lista de lembretes */
+.reminder-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+/* Ajusta o estilo da checkbox */
+.custom-checkbox {
+  transform: scale(2); /* Aumenta o tamanho da checkbox */
+  margin-bottom: 10px; /* Espaço abaixo da checkbox */
+  accent-color: #9e0f0f;
+}
+
+
+/* Adiciona estilos para os elementos de entrada do formulário */
+.input-full-width {
+  width: 100%; /* Faz com que o elemento ocupe a largura total */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+  margin-bottom: 10px; /* Espaço abaixo de cada campo */
+}
+
+/* Aplica estilos para o botão para corresponder à largura dos campos de entrada */
+.button-full-width {
+  width: 100%; /* Faz com que o botão ocupe a largura total */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estilos para botões que se assemelham ao menu */
+.button-style {
+  padding: 10px 20px; /* Tamanho do padding igual ao menu */
+  background-color: #c62626; /* Cor de fundo igual ao menu */
+  color: whitesmoke; /* Cor da fonte igual ao menu */
+  border: none; /* Sem borda ou similar ao estilo do menu */
+  cursor: pointer; /* Mãozinha ao passar o mouse */
+  transition: all 0.3s ease; /* Transição suave para hover e focus */
+  font-size: 0.9rem; /* Tamanho da fonte menor */
+  margin-bottom: 10px; /* Espaço abaixo do botão */
+}
+
+.button-style:hover {
+  background-color: #9e0f0f; /* Cor de fundo ao passar o mouse, similar ao menu */
+}
+
+.button-style:focus {
+  outline: none; /* Remove o contorno ao clicar, similar ao menu */
+}
+
+.button-style:active {
+  transform: translateY(1px); /* Efeito de clique, similar ao menu */
+}
+
+/* Ajuste o tamanho do botão para ser menor que o menu se necessário */
+.button-small {
+  padding: 5px 10px; /* Padding menor para um botão mais pequeno */
+  font-size: 0.8rem; /* Fonte menor para um botão mais pequeno */
+}
+
+/* Sobrescreve o estilo do dia selecionado para usar a cor vermelha */
+.react-datepicker__day--selected {
+  background-color: #c62626 !important; /* cor de fundo vermelha */
+  color: white !important; /* cor do texto branca para contraste */
+}
+
+/* Sobrescreve o estilo do dia selecionado ao passar o mouse para um tom mais claro de vermelho */
+.react-datepicker__day--selected:hover {
+  background-color: #9e0f0f !important;
+}
+
+/* Adiciona uma borda vermelha ao redor do calendário inteiro */
+.react-datepicker {
+  border: 1px solid #c62626 !important; /* borda vermelha */
+}
+
+/* Estilos para alterar a cor de fundo ao passar o mouse e focar em um dia */
+.react-datepicker__day:hover,
+.react-datepicker__day--keyboard-selected {
+  background-color: #f5c6cb !important; /* cor de fundo mais clara ao passar o mouse */
+}
+
+
+
+
+/* utilizei o chat gpt para me ajudar a estilizar meu código e comentar as tags css */

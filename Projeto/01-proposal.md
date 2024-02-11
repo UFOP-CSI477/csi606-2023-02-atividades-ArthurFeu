@@ -1,6 +1,6 @@
 # **CSI606-2023-02 - Proposta de Trabalho Final**
 
-## *Aluna(o): Arthur Mendonça Feu*
+## *Aluno: Arthur Mendonça Feu*
 
 --------------
 

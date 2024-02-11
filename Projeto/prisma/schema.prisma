@@ -1,0 +1,29 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        Int         @id @default(autoincrement())
+  email     String      @unique
+  name      String?
+  reminders Reminder[]
+}
+
+model Reminder {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String?
+  date        DateTime
+  completed   Boolean  @default(false)
+  userId      Int
+  user        User     @relation(fields: [userId], references: [id])
+}
+
